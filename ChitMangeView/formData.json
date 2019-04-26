@@ -1,0 +1,34 @@
+{
+    "formData" : [
+        {
+            "title" : "일 자",
+            "col" : "short",
+            "type" : "text",
+            "icon" : ""
+        },
+        {
+            "title" : "거 래 처",
+            "col" : "long",
+            "type" : "text",
+            "icon" : ""
+        },
+        {
+            "title" : "상 품",
+            "col" : "short",
+            "type" : "text",
+            "icon" : ""
+        },
+        {
+            "title" : "가 격",
+            "col" : "short",
+            "type" : "num",
+            "icon" : "https://cdn3.iconfinder.com/data/icons/inficons-currency-set/512/krw-512.png"
+        },
+        {
+            "title" : "일 자",
+            "col" : "short",
+            "type" : "textarea",
+            "icon" : ""
+        }
+    ]
+}

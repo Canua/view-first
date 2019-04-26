@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin-ext);
+
+/* wrapper 기본 세팅  */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: inherit;
+    font-size: 12px;
+    vertical-align: baseline;
+    font: inherit;
+    font-family: Ubuntu, sans-serif
+    /* color: #686868; */
+}
+
+#wrapper {
+    height: 100vh;
+}
+#wrapper .flex {
+    display: flex;
+}
+
+
+
+/* web 모드 시 grow 조정 가능하게 왜? wrapper display가 flex라서 가능 */
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-grow-2 {
+    flex-grow: 2;
+}
+.flex-grow-3 {
+    flex-grow: 3;
+}
+
+/* page-content-wrapper  , header, subtopic, content의 부모 */
+#page-content-wrapper {
+    width: inherit;
+    height: inherit;
+}
+
+
+/* header */
+#header {
+    margin: 0;
+    border: 1px solid #dee2e6;
+    padding: 0.85rem 1.25rem;
+    font-size: 1.2rem;
+}
+#header .header-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#header i {
+    margin-right: 2%;
+}
+
+/* subtopic */
+#subtopics {
+    display: flex;
+    width: 100%;
+}
+
+.subtopic-item {
+    border : 0.02px solid white;
+	flex-grow:1;
+	flex-basis:100px;
+	padding: 0.75rem 0.75rem;
+	text-align: center;
+    font-weight: bold;
+}
+
+.clicked {
+	background-color: hsla(0,0%,100%,.2);
+	/* transition: background-color .3s .2s; */
+}
+
+/* content-wrapper */
+#content-wrapper {
+    width: auto;
+}
+/* form-wrapper */
+#form-wrapper {
+    overflow: hidden;
+}
+
+
+
+/* media */
+@media (min-width: 768px) {
+    .hamburger-btn {
+        visibility:hidden;
+    }
+}
+
+
+
+
+
+
+/* 기본 색상 */
+.bgcolor-basic {
+    background : #3498DB
+}
+.color-white {
+    color : white;
+}
+.color-black {
+    color : #333333
+}
